@@ -1,0 +1,23 @@
+#section-5 {
+    @extend %flex-center-column;
+    margin: 20vh 0;
+    font-size: $police-small;
+    color: $h1;
+    text-align: center;
+
+    a {
+        color: $h1;
+        text-decoration: none;
+    }
+
+    .footer-link {
+        display: flex;
+        align-items: center;
+    }
+    .footer-link img,.footer-link p{
+        padding: 15px;
+    }
+    p {
+        font-size: $police-micro;
+    }
+}

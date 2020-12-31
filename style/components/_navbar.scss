@@ -1,0 +1,161 @@
+#navbar {
+    @extend %full-size;
+    @extend %flex-center-column;
+    position: fixed;
+    z-index: 4;
+    top: 0px;
+    left: 0px;
+    margin: 0px;
+    clip-path: circle(5% at 0 0);
+    transition: all .5s;
+    a {
+        list-style: none;
+        font-family: petite-regular;
+        padding: 10px;
+        margin: 10px;
+        font-size: $police-medium;
+        text-decoration: none;
+        color: $h1;
+        background: none;
+        transition: all .5s ease;
+        opacity: 0;
+
+        &:nth-child(6) { margin-left: -30vmax; }
+        &:nth-child(5) { margin-left: -25vmax; }
+        &:nth-child(4) { margin-left: -20vmax; }
+        &:nth-child(3) { margin-left: -15vmax; }
+        &:nth-child(2) { margin-left: -10vmax; }
+        &:nth-child(1) { margin-left: -5vmax; }
+    }
+
+    &.deployed a { opacity: 1; margin-left: 0vmax; }
+    &.deployed { clip-path: circle(150% at 0 0); background-color: var(--bg-card); }
+
+}
+#label-button  {
+    @extend %flex-center-column;
+    z-index: 5;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    cursor: pointer;
+    background-color: $bg-card;
+    border-radius: 15px;
+    
+    .navbar-checkbox-cross-1,.navbar-checkbox-cross-2,.navbar-checkbox-cross-3 {
+        position: absolute;
+        width: 60px;
+        height: 5px;
+        border-radius: 5px;
+        background-color: var(--h1);
+    }
+    .navbar-checkbox-cross-1 {
+        margin-top: -40px;
+        transition: transform .25s ease,margin .25s ease;
+    }
+    .navbar-checkbox-cross-2 {
+        transition: width .25s ease;
+    }
+    .navbar-checkbox-cross-3 {
+        margin-top: 40px;
+        transition: transform .25s ease,margin .25s ease;
+    }
+
+    &.deployed .navbar-checkbox-cross-1{ margin-top: 0px; transform: rotate(45deg); }
+    &.deployed .navbar-checkbox-cross-2{ width: 0px; }
+    &.deployed .navbar-checkbox-cross-3{ margin-top: 0px; transform: rotate(-45deg); }
+
+}
+
+
+#navbar-checkbox {
+    display: none;
+}
+
+
+@include phone {
+    #label-button  {
+        width: 60px;
+        height: 60px;
+        border-radius: 10px;
+
+        .navbar-checkbox-cross-1,.navbar-checkbox-cross-2,.navbar-checkbox-cross-3 {
+            width: 40px;
+        }
+
+        .navbar-checkbox-cross-1 {
+            margin-top: -30px;
+        }
+        .navbar-checkbox-cross-3 {
+            margin-top: 30px;
+        }
+    }
+}
+
+@include desktop {
+    #navbar-icon {
+        position: absolute;
+        top: calc(50vh - 25vw/#{$rapport-rose-2}/2);
+        left: calc(50vw - 25vw/2);
+        width: 25vw;
+        height: calc(25vw/#{$rapport-rose-2});
+        background-repeat: no-repeat;
+        background-size: calc(25vw*61) calc(25vw/#{$rapport-rose-2});
+        opacity: 0;
+        transition: opacity 2s ease;
+        &.animate-display { opacity: 1; animation: display_icon_navbar 1.5s steps(60) forwards; }
+        &.animate-hide { opacity: 1; animation: hide_icon_navbar .75s steps(60) forwards; }
+        &.animation-0 { background-image: url('/portfolio-emilie/animation/navbar/rose_30fps.svg'); }
+        &.animation-1 { background-image: url('/portfolio-emilie/animation/navbar/about_30fps.svg'); }
+        &.animation-2 { background-image: url('/portfolio-emilie/animation/navbar/photo_30fps.svg'); }
+        &.animation-3 { background-image: url('/portfolio-emilie/animation/navbar/camera_30fps.svg'); }
+        &.animation-4 { background-image: url('/portfolio-emilie/animation/navbar/credits_30fps.svg'); }
+        
+    }
+    
+    @keyframes display_icon_navbar { from { background-position: 0px 0px; } to { background-position: calc(25vw*-60) 0px; } }
+    
+    @keyframes hide_icon_navbar { from { background-position: calc(25vw * -60) 0px; } to { background-position: 0px 0px; } }
+    
+    #navbar {
+        align-items: flex-start;
+        
+        a {
+            display: flex;
+            align-items: center;
+        }
+        a:hover {
+            padding-left: 100px; color: $purple;         
+            &::after {
+                width: 100px;
+            }
+        }
+        a::after {
+            content: '';
+            display: block;
+            position: absolute;
+            left: 0px;
+            width: 0px;
+            height: 4px;
+            border-radius: 4px;
+            background-color: $purple;
+            transition: width .5s ease;
+        }
+        &.hovered {
+            clip-path: circle(20% at 0 0);
+            background-color: rgba(216,222,233, 0.9);
+        }
+        &.deployed { 
+            clip-path: circle(150% at 0 0); 
+            background-color: $bg-card; 
+            a { 
+                opacity: 1;
+                margin-left: 4vmax;
+            }
+        }
+    }
+}
+

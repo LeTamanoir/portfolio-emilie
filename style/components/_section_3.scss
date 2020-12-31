@@ -1,0 +1,152 @@
+
+#section-3 {
+    @extend %justify-align-center;
+    @extend %flex-center-column;
+    width: 90vw;
+    margin: 5vw;
+    overflow: hidden;
+    
+
+    .title {
+        @extend %font-rouge;
+        margin: 5vh 0;
+
+        text-align: center;
+        color: $h1;
+        font-size: $police-big;
+        opacity: 0;
+        transform: translateY(50%);
+        transition: all 1s cubic-bezier(0.25, 0.70, 0.35, 1.3);
+
+        div{
+            @extend %flex-center-row;
+        }
+    }
+    .camera-photo {
+        @extend %bg-center;
+        margin-left: 30px;
+        display: inline-block;
+        width: 80px;
+        height: 80px;
+        background-image: url('/portfolio-emilie/svg/camera.svg');
+        background-size: contain;
+    }
+
+    &.onload {
+        .title {
+            transform: translateY(0vmax);
+            opacity: 1;
+        }
+
+        .carousel-1-cell { 
+            &:nth-child(1) { transform: rotateY(  0deg) translateZ(var(--taille-carousel-1)); opacity: 1;}
+            &:nth-child(2) { transform: rotateY( 40deg) translateZ(var(--taille-carousel-1)); }
+            &:nth-child(3) { transform: rotateY( 80deg) translateZ(var(--taille-carousel-1)); }
+            &:nth-child(4) { transform: rotateY(120deg) translateZ(var(--taille-carousel-1)); }
+            &:nth-child(5) { transform: rotateY(160deg) translateZ(var(--taille-carousel-1)); }
+            &:nth-child(6) { transform: rotateY(200deg) translateZ(var(--taille-carousel-1)); }
+            &:nth-child(7) { transform: rotateY(240deg) translateZ(var(--taille-carousel-1)); }
+            &:nth-child(8) { transform: rotateY(280deg) translateZ(var(--taille-carousel-1)); }
+            &:nth-child(9) { transform: rotateY(320deg) translateZ(var(--taille-carousel-1)); }
+        }
+        
+    }
+    
+        
+    .carousel-container-1 {
+        margin: 5vh 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 40vw;
+        height: calc(40vw/#{$rapport});
+        perspective: 70vw;
+    }
+    #carousel-1 {
+        @extend %full-size-percent;
+        position: absolute;
+        transform-style: preserve-3d;
+        transform: translateZ(calc(#{$taille-carousel-1} * -1));
+        transition: transform .5s ease;
+    }
+
+    .carousel-button-right,.carousel-button-left {
+        @extend %bg-center;
+        z-index: 10;
+        width: 80px;
+        height: 80px;
+        background-size: 60px 60px;
+        border-radius: 100px;
+        cursor: pointer;
+        backdrop-filter: blur(2px) invert(25%);
+    }
+    .carousel-button-right {
+        margin-right: -100px;
+        background-image: url('/portfolio-emilie/svg/arrow-right.svg');
+    }
+    .carousel-button-left {
+        margin-left: -100px;
+        background-image: url('/portfolio-emilie/svg/arrow-left.svg');
+    }
+
+    .carousel-1-cell {
+        @extend %flex-center-row;
+        @extend %bg-center;
+        background-size: contain;
+        position: absolute;
+        width: 35vw;
+        height: calc(35vw/#{$rapport});
+        margin: calc(2.5vw/#{$rapport}) 2.5vw calc(2.5vw/#{$rapport});
+        transition: opacity .5s ease, transform 2s ease;
+        opacity: 0.5;
+        
+        &:nth-child(1) { background-image: url('/portfolio-emilie/images/full-format/agapanthe.webp'); transform: rotateY(0deg) translateZ(var(--taille-carousel-1));}
+        &:nth-child(2) { background-image: url('/portfolio-emilie/images/full-format/fleur-bizarre.webp'); transform: rotateY(0deg) translateZ(500vw); }
+        &:nth-child(3) { background-image: url('/portfolio-emilie/images/full-format/fleur-blanche.webp'); transform: rotateY(0deg) translateZ(500vw); }
+        &:nth-child(4) { background-image: url('/portfolio-emilie/images/full-format/fleur-jaune-2.webp'); transform: rotateY(0deg) translateZ(500vw); }
+        &:nth-child(5) { background-image: url('/portfolio-emilie/images/full-format/fleur-violette.webp'); transform: rotateY(0deg) translateZ(500vw); }
+        &:nth-child(6) { background-image: url('/portfolio-emilie/images/full-format/lavande-2.webp'); transform: rotateY(0deg) translateZ(500vw); }
+        &:nth-child(7) { background-image: url('/portfolio-emilie/images/full-format/rosier-2.webp'); transform: rotateY(0deg) translateZ(500vw); }
+        &:nth-child(8) { background-image: url('/portfolio-emilie/images/full-format/lavande.webp'); transform: rotateY(0deg) translateZ(500vw); }
+        &:nth-child(9) { background-image: url('/portfolio-emilie/images/full-format/rose.webp'); transform: rotateY(0deg) translateZ(500vw); }
+        
+    }
+
+
+    .carousel-cell-zoom {
+        @extend %bg-center;
+        display: block;
+        background-size: 75px 75px;
+        width: 150px;
+        height: 150px;
+        border-radius: 100px;
+        transition: all .5s ease;
+        cursor: pointer;
+
+        &:hover {
+            background-image: url('/portfolio-emilie/svg/loop.svg');
+            backdrop-filter: blur(4px) invert(25%);
+        }   
+    }
+
+    @include phone {
+        
+        .carousel-button-right,.carousel-button-left {
+            width: 60px;
+            height: 60px;
+            background-size: 40px 40px;
+        }
+        .camera-photo {
+            width: 60px;
+            height: 60px;
+        }
+
+        .carousel-button-right {
+            margin-right: -60px;
+        }
+        .carousel-button-left {
+            margin-left: -60px;
+        }
+
+    }
+}

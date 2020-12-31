@@ -1,0 +1,53 @@
+@import "./_mixins";
+
+$rapport: 1920/1440;
+$rapport-roses: 960/404;
+$rapport-texte: 440/106;
+$rapport-video: 1152/648;
+$rapport-rose-2: 350/285;
+
+:root {
+    --taille-carousel-1: 0px;
+    --taille-carousel-2: 0px;
+
+    --police-huge: 84px;
+    --police-big: 64px;
+    --police-medium: 44px;
+    --police-small: 26px;
+    --police-micro: 16px;
+}
+@include phone {
+    :root {
+        --police-huge: 44px;
+        --police-big: 36px;
+        --police-medium: 24px;
+        --police-small: 16px;
+        --police-micro: 12px;   
+    }
+}
+@include tablet {
+    :root {
+        --police-huge: 64px;
+        --police-big: 44px;
+        --police-medium: 36px;
+        --police-small: 24px;
+        --police-micro: 16px;
+    }
+}
+@include desktop {
+    :root {
+        --police-huge: 84px;
+        --police-big: 64px;
+        --police-medium: 44px;
+        --police-small: 26px;
+        --police-micro: 16px;
+    }    
+}
+$police-huge: var(--police-huge);
+$police-big: var(--police-big);
+$police-medium: var(--police-medium);
+$police-small: var(--police-small);
+$police-micro: var(--police-micro);
+
+$taille-carousel-1: var(--taille-carousel-1);
+$taille-carousel-2: var(--taille-carousel-2);

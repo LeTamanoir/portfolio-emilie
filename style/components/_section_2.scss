@@ -1,0 +1,102 @@
+#section-2 {
+    @extend %justify-align-center;
+    width: 90vw;
+    padding: 5vw;
+    overflow-y: hidden;
+    background-color: $bg;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr minmax(400px,2fr);
+    grid-gap: 5vw; 
+    grid-template-areas:
+    "title title"
+    "image-1 content";
+
+    .title {
+        @extend %font-rouge;
+        @extend %self-center;
+        color: $h1;
+        grid-area: title;
+        font-size: $police-huge;
+        padding: 10px;
+        text-align: center;
+        opacity: 0;
+        transform: translateX(100%);
+        transition: all 1s ease;
+    }
+    .content {
+        @extend %font-petite;
+        @extend %self-center;
+        color: $h1;
+        grid-area: content;
+        font-size: $police-small;
+        padding: 10px;
+        opacity: 0;
+        transform: translateX(100%);
+        transition: all .5s ease;
+    
+    }
+
+    &.onload {
+        .content,.title { 
+            transform: translateX(0);
+            opacity: 1;
+        }   
+    }
+    #section-2-image-1 {
+        @extend %full-size-percent;
+        @extend %bg-center;
+        @extend %flex-center-row;
+        background-size: cover;
+        border-radius: 10px;
+        grid-area: image-1;
+        background-image: url('/portfolio-emilie/images/full-format/rose-jaune.webp');
+        opacity: 0;
+        margin-left: -100%;
+        transition: all .75s ease;
+    }
+    .section-2-image-zoom {
+        @extend %bg-center;
+        display: block;
+        background-size: 75px 75px;
+        width: 150px;
+        height: 150px;
+        border-radius: 100px;
+        transition: all .5s ease;
+        cursor: pointer;
+        
+        &:hover {
+            background-image: url('/portfolio-emilie/svg/loop.svg');
+            backdrop-filter: blur(4px) invert(25%);
+        }
+    }
+
+    &.onload {
+        #section-2-image-1 {
+            margin-left: 0%;
+            opacity: 1;
+        }
+    }
+
+    @include phone {
+        
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr minmax(200px,2fr) 3fr;
+        grid-template-areas:
+        "title"
+        "image-1"
+        "content";
+    }
+
+    @include tablet {
+        
+        grid-template-columns: 1fr;
+        grid-template-rows: .25fr minmax(400px,2fr) 2fr;
+        grid-gap: 5vw; 
+        grid-template-areas:
+        "title"
+        "image-1"
+        "content";
+    }
+}
+

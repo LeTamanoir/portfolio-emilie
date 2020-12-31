@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" preserveAspectRatio="xMidYMid meet" viewBox="0 0 40 30" width="40" height="30">
+<defs>
+<path d="M26.35 29.37C24.59 28.22 24.12 25.9 25.29 24.17C25.71 23.56 27.79 20.5 31.53 15C27.79 9.5 25.71 6.44 25.29 5.83C24.12 4.11 24.59 1.78 26.35 0.63C28.11 -0.52 30.49 -0.05 31.66 1.67C32.42 2.8 38.55 11.8 39.31 12.92C40.17 14.18 40.17 15.82 39.31 17.08C38.55 18.21 32.42 27.21 31.66 28.33C30.92 29.42 29.7 30 28.47 30C27.74 30 27.01 29.8 26.35 29.37Z" id="fCulaBDkY"/>
+<path d="M8.25 28.33C7.48 27.21 1.36 18.21 0.6 17.08C-0.26 15.82 -0.26 14.18 0.6 12.92C1.36 11.8 7.48 2.8 8.25 1.67C9.42 -0.05 11.79 -0.52 13.55 0.63C15.32 1.78 15.79 4.11 14.62 5.83C14.2 6.44 12.12 9.5 8.38 15C12.12 20.5 14.2 23.56 14.62 24.17C15.78 25.9 15.32 28.22 13.55 29.37C12.9 29.8 12.17 30 11.44 30C10.2 30 8.99 29.42 8.25 28.33Z" id="b1SCPlzAUu"/>
+</defs><g><g><g><use xlink:href="#fCulaBDkY" opacity="1" fill="#ECEFF4" fill-opacity="1"/><g><use xlink:href="#fCulaBDkY" opacity="1" fill-opacity="0" stroke="#ECEFF4" stroke-width="1" stroke-opacity="0"/></g></g><g><use xlink:href="#b1SCPlzAUu" opacity="1" fill="#ECEFF4" fill-opacity="1"/><g><use xlink:href="#b1SCPlzAUu" opacity="1" fill-opacity="0" stroke="#ECEFF4" stroke-width="1" stroke-opacity="0"/>
+</g></g></g></g></svg>

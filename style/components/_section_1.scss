@@ -1,0 +1,32 @@
+#section-1 {
+    @extend %full-size;
+    @extend %flex-center-column;
+    justify-content: space-evenly;
+    overflow: hidden;
+    
+    .roses {
+        z-index: -1;
+        width: 90vmin;
+        height: calc(90vmin/ #{$rapport-roses});
+        background-image: url('/portfolio-emilie/animation/roses_30fps.svg');
+        background-size: 90vmin*91 calc(90vmin/ #{$rapport-roses});
+        background-repeat: no-repeat;
+    }
+
+    &.onload .roses {
+        animation: display-roses 3s steps(90) forwards;
+    }
+
+    .title {
+        width: 90vmin;
+        height: calc(90vmin/#{$rapport-texte});
+        background-size: 90vmin*91 calc(90vmin/#{$rapport-texte});
+        background-repeat: no-repeat;
+        background-image: url('/portfolio-emilie/animation/name_30fps.svg');
+    }
+
+    &.onload .title { animation: 3s display-title steps(90) forwards; }
+
+    @keyframes display-roses { from { background-position: 0px 0px; } to { background-position: 90vmin*-90 0px; } }
+    @keyframes display-title { from { background-position: 0px 0px; } to { background-position: 90vmin*-90 0px; } }
+}

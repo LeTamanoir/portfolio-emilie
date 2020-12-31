@@ -1,0 +1,67 @@
+@font-face {
+    font-family: petite-regular;
+    src: url('../fonts/Petit_Formal_Script/PetitFormalScript-Regular.ttf');
+}
+@font-face {
+    font-family: rouge-regular;
+    src: url('../fonts/Rouge_Script/RougeScript-Regular.ttf');
+}
+
+@import "../../style/scss/_variables";
+@import "./_placeholders";
+
+@import "./_variables";
+@import "./_mixins";
+
+@import "./components/_image_viewer.scss";
+@import "./components/_navbar";
+@import "./components/_section_0";
+@import "./components/_section_1";
+@import "./components/_section_2";
+@import "./components/_section_3";
+@import "./components/_section_4";
+@import "./components/_footer";
+
+
+
+html {
+    background-color: $bg;
+    scroll-behavior: smooth;
+    font-family: 'Titillium Web', sans-serif;
+    overflow-x: hidden;
+    body {
+        padding: 0;
+        margin: 0;
+        overflow-x: hidden;
+
+        
+        section {
+            overflow-x: hidden;
+
+        }
+    //     @extend %flex-center-column;
+    //     main {
+    //         width: 100vw;
+    //         @extend %flex-center-column;
+    //         h1 {
+    //             color: $h1;
+    //             font-size: 25px;
+    //             text-align: center;
+    //         }
+    //     }
+    }
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: $bg-card; 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: $h3;
+  border-radius: 15px;
+
+}
