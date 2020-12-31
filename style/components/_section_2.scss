@@ -6,7 +6,7 @@
     background-color: $bg;
     display: grid;
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1fr minmax(400px,2fr);
+    grid-template-rows: 1fr minmax(500px,2fr);
     grid-gap: 5vw; 
     grid-template-areas:
     "title title"
