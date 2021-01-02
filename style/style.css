@@ -329,7 +329,6 @@
 }
 
 #label-button .navbar-checkbox-cross-1 {
-  margin-top: -40px;
   -webkit-transition: margin .25s ease,-webkit-transform .25s ease;
   transition: margin .25s ease,-webkit-transform .25s ease;
   transition: transform .25s ease,margin .25s ease;
@@ -342,17 +341,25 @@
 }
 
 #label-button .navbar-checkbox-cross-3 {
-  margin-top: 40px;
   -webkit-transition: margin .25s ease,-webkit-transform .25s ease;
   transition: margin .25s ease,-webkit-transform .25s ease;
   transition: transform .25s ease,margin .25s ease;
   transition: transform .25s ease,margin .25s ease,-webkit-transform .25s ease;
 }
 
+#label-button .navbar-checkbox-cross-1 {
+  -webkit-transform: translateY(-400%);
+          transform: translateY(-400%);
+}
+
+#label-button .navbar-checkbox-cross-3 {
+  -webkit-transform: translateY(400%);
+          transform: translateY(400%);
+}
+
 #label-button.deployed .navbar-checkbox-cross-1 {
-  margin-top: 0px;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  -webkit-transform: rotate(45deg) translateY(0);
+          transform: rotate(45deg) translateY(0);
 }
 
 #label-button.deployed .navbar-checkbox-cross-2 {
@@ -360,9 +367,8 @@
 }
 
 #label-button.deployed .navbar-checkbox-cross-3 {
-  margin-top: 0px;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg) translateY(0);
+          transform: rotate(-45deg) translateY(0);
 }
 
 #navbar-checkbox {
@@ -377,12 +383,6 @@
   }
   #label-button .navbar-checkbox-cross-1, #label-button .navbar-checkbox-cross-2, #label-button .navbar-checkbox-cross-3 {
     width: 40px;
-  }
-  #label-button .navbar-checkbox-cross-1 {
-    margin-top: -30px;
-  }
-  #label-button .navbar-checkbox-cross-3 {
-    margin-top: 30px;
   }
 }
 
@@ -763,7 +763,7 @@
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: image-1;
-  background-image: url("/portfolio-emilie/images/full-format/rose-jaune.webp");
+  background-image: url("/portfolio-emilie/images/jpg/rose-jaune.jpg");
   opacity: 0;
   margin-left: -100%;
   -webkit-transition: all .75s ease;
@@ -956,55 +956,55 @@
 }
 
 #section-3 .carousel-1-cell:nth-child(1) {
-  background-image: url("/portfolio-emilie/images/full-format/agapanthe.webp");
+  background-image: url("/portfolio-emilie/images/jpg/agapanthe.jpg");
   -webkit-transform: rotateY(0deg) translateZ(var(--taille-carousel-1));
           transform: rotateY(0deg) translateZ(var(--taille-carousel-1));
 }
 
 #section-3 .carousel-1-cell:nth-child(2) {
-  background-image: url("/portfolio-emilie/images/full-format/fleur-bizarre.webp");
+  background-image: url("/portfolio-emilie/images/jpg/fleur-bizarre.jpg");
   -webkit-transform: rotateY(0deg) translateZ(500vw);
           transform: rotateY(0deg) translateZ(500vw);
 }
 
 #section-3 .carousel-1-cell:nth-child(3) {
-  background-image: url("/portfolio-emilie/images/full-format/fleur-blanche.webp");
+  background-image: url("/portfolio-emilie/images/jpg/fleur-blanche.jpg");
   -webkit-transform: rotateY(0deg) translateZ(500vw);
           transform: rotateY(0deg) translateZ(500vw);
 }
 
 #section-3 .carousel-1-cell:nth-child(4) {
-  background-image: url("/portfolio-emilie/images/full-format/fleur-jaune-2.webp");
+  background-image: url("/portfolio-emilie/images/jpg/fleur-jaune-2.jpg");
   -webkit-transform: rotateY(0deg) translateZ(500vw);
           transform: rotateY(0deg) translateZ(500vw);
 }
 
 #section-3 .carousel-1-cell:nth-child(5) {
-  background-image: url("/portfolio-emilie/images/full-format/fleur-violette.webp");
+  background-image: url("/portfolio-emilie/images/jpg/fleur-violette.jpg");
   -webkit-transform: rotateY(0deg) translateZ(500vw);
           transform: rotateY(0deg) translateZ(500vw);
 }
 
 #section-3 .carousel-1-cell:nth-child(6) {
-  background-image: url("/portfolio-emilie/images/full-format/lavande-2.webp");
+  background-image: url("/portfolio-emilie/images/jpg/lavande-2.jpg");
   -webkit-transform: rotateY(0deg) translateZ(500vw);
           transform: rotateY(0deg) translateZ(500vw);
 }
 
 #section-3 .carousel-1-cell:nth-child(7) {
-  background-image: url("/portfolio-emilie/images/full-format/rosier-2.webp");
+  background-image: url("/portfolio-emilie/images/jpg/rosier-2.jpg");
   -webkit-transform: rotateY(0deg) translateZ(500vw);
           transform: rotateY(0deg) translateZ(500vw);
 }
 
 #section-3 .carousel-1-cell:nth-child(8) {
-  background-image: url("/portfolio-emilie/images/full-format/lavande.webp");
+  background-image: url("/portfolio-emilie/images/jpg/lavande.jpg");
   -webkit-transform: rotateY(0deg) translateZ(500vw);
           transform: rotateY(0deg) translateZ(500vw);
 }
 
 #section-3 .carousel-1-cell:nth-child(9) {
-  background-image: url("/portfolio-emilie/images/full-format/rose.webp");
+  background-image: url("/portfolio-emilie/images/jpg/rose.jpg");
   -webkit-transform: rotateY(0deg) translateZ(500vw);
           transform: rotateY(0deg) translateZ(500vw);
 }

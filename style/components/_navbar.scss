@@ -53,21 +53,24 @@
         background-color: var(--h1);
     }
     .navbar-checkbox-cross-1 {
-        margin-top: -40px;
         transition: transform .25s ease,margin .25s ease;
     }
     .navbar-checkbox-cross-2 {
         transition: width .25s ease;
     }
     .navbar-checkbox-cross-3 {
-        margin-top: 40px;
         transition: transform .25s ease,margin .25s ease;
     }
-
-    &.deployed .navbar-checkbox-cross-1{ margin-top: 0px; transform: rotate(45deg); }
+    .navbar-checkbox-cross-1 {
+        transform: translateY(-400%);
+    }
+    .navbar-checkbox-cross-3 {
+        transform: translateY(400%);
+    }
+    &.deployed .navbar-checkbox-cross-1{ transform: rotate(45deg) translateY(0)}
     &.deployed .navbar-checkbox-cross-2{ width: 0px; }
-    &.deployed .navbar-checkbox-cross-3{ margin-top: 0px; transform: rotate(-45deg); }
-
+    &.deployed .navbar-checkbox-cross-3{ transform: rotate(-45deg) translateY(0); }
+    
 }
 
 
@@ -86,14 +89,9 @@
             width: 40px;
         }
 
-        .navbar-checkbox-cross-1 {
-            margin-top: -30px;
-        }
-        .navbar-checkbox-cross-3 {
-            margin-top: 30px;
-        }
     }
 }
+
 
 @include desktop {
     #navbar-icon {

@@ -34,6 +34,7 @@ function detectMobile() {
     return ( ( window.innerWidth <= 1024 ) );
 }
 
+
 console.log(detectMobile())
 
 var transalteZval=0;
@@ -191,7 +192,7 @@ const hover3d = (div,state,strength) => {
 const showImage = (img,state) => {
     if (state) {
         imageViewer.classList.add("deploy");
-        imageViewerContent.style.backgroundImage = "url('images/full-format/"+img+".webp')";
+        imageViewerContent.style.backgroundImage = "url('images/jpg/"+img+".jpg')";
     } 
     else {
         imageViewer.classList.remove("deploy");

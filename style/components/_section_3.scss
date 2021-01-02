@@ -100,15 +100,15 @@
         transition: opacity .5s ease, transform 2s ease;
         opacity: 0.5;
         
-        &:nth-child(1) { background-image: url('/portfolio-emilie/images/full-format/agapanthe.webp'); transform: rotateY(0deg) translateZ(var(--taille-carousel-1));}
-        &:nth-child(2) { background-image: url('/portfolio-emilie/images/full-format/fleur-bizarre.webp'); transform: rotateY(0deg) translateZ(500vw); }
-        &:nth-child(3) { background-image: url('/portfolio-emilie/images/full-format/fleur-blanche.webp'); transform: rotateY(0deg) translateZ(500vw); }
-        &:nth-child(4) { background-image: url('/portfolio-emilie/images/full-format/fleur-jaune-2.webp'); transform: rotateY(0deg) translateZ(500vw); }
-        &:nth-child(5) { background-image: url('/portfolio-emilie/images/full-format/fleur-violette.webp'); transform: rotateY(0deg) translateZ(500vw); }
-        &:nth-child(6) { background-image: url('/portfolio-emilie/images/full-format/lavande-2.webp'); transform: rotateY(0deg) translateZ(500vw); }
-        &:nth-child(7) { background-image: url('/portfolio-emilie/images/full-format/rosier-2.webp'); transform: rotateY(0deg) translateZ(500vw); }
-        &:nth-child(8) { background-image: url('/portfolio-emilie/images/full-format/lavande.webp'); transform: rotateY(0deg) translateZ(500vw); }
-        &:nth-child(9) { background-image: url('/portfolio-emilie/images/full-format/rose.webp'); transform: rotateY(0deg) translateZ(500vw); }
+        &:nth-child(1) { background-image: url('/portfolio-emilie/images/jpg/agapanthe.jpg'); transform: rotateY(0deg) translateZ(var(--taille-carousel-1));}
+        &:nth-child(2) { background-image: url('/portfolio-emilie/images/jpg/fleur-bizarre.jpg'); transform: rotateY(0deg) translateZ(500vw); }
+        &:nth-child(3) { background-image: url('/portfolio-emilie/images/jpg/fleur-blanche.jpg'); transform: rotateY(0deg) translateZ(500vw); }
+        &:nth-child(4) { background-image: url('/portfolio-emilie/images/jpg/fleur-jaune-2.jpg'); transform: rotateY(0deg) translateZ(500vw); }
+        &:nth-child(5) { background-image: url('/portfolio-emilie/images/jpg/fleur-violette.jpg'); transform: rotateY(0deg) translateZ(500vw); }
+        &:nth-child(6) { background-image: url('/portfolio-emilie/images/jpg/lavande-2.jpg'); transform: rotateY(0deg) translateZ(500vw); }
+        &:nth-child(7) { background-image: url('/portfolio-emilie/images/jpg/rosier-2.jpg'); transform: rotateY(0deg) translateZ(500vw); }
+        &:nth-child(8) { background-image: url('/portfolio-emilie/images/jpg/lavande.jpg'); transform: rotateY(0deg) translateZ(500vw); }
+        &:nth-child(9) { background-image: url('/portfolio-emilie/images/jpg/rose.jpg'); transform: rotateY(0deg) translateZ(500vw); }
         
     }
 
