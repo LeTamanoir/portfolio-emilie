@@ -161,9 +161,9 @@ if (detectMobile() == false) {
     })
 }
 
-document.addEventListener('mousemove', (event) => {
-    mouseX = event.clientX;
-    mouseY = event.clientY;
+document.addEventListener('mousemove', (e) => {
+    mouseX = e.clientX;
+    mouseY = e.clientY;
 });
 
 const hover3d = (div,state,strength) => {

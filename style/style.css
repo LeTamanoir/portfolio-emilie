@@ -32,7 +32,7 @@
   --aurora-dark-4: #709353;
   --aurora-dark-5: #87597f;
   --aurora-dark-6: #4a7097;
-  --image-acceuil: 15vmin;
+  --image-acceuil: 20vmin;
   --image-acceuil-small: 10vmin;
   --snake-width: 60vmin;
   --police-huge: 46px;
@@ -515,7 +515,7 @@
   display: none;
 }
 
-#section-0 h1 {
+#section-0 h2 {
   font-family: petite-regular;
   color: var(--h1);
   font-size: var(--police-big);
