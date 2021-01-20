@@ -1,5 +1,104 @@
 @import "./_mixins";
 
+@import "./_mixins";
+
+:root {
+    --black-1: #2E3440;
+    --black-2: #3B4252;
+    --black-3: #434C5E;
+    --black-4: #4C566A;
+    
+    --white: #F4F4F4;
+    --white-1: #D8DEE9;
+    --white-2: #E5E9F0;
+    --white-3: #ECEFF4;
+
+    --frost-1: #5E81AC;
+    --frost-2: #81A1C1;
+    --frost-3: #88C0D0;
+    --frost-4: #8FBCBB;
+
+    --aurora-1: #BF616A;
+    --aurora-2: #D08770;
+    --aurora-3: #EBCB8B;
+    --aurora-4: #A3BE8C;
+    --aurora-5: #B48EAD;
+    --aurora-6: #81A1C1;
+
+    --aurora-dark-1: #8f3a42;
+    --aurora-dark-2: #a85237;
+    --aurora-dark-3: #daa02b;
+    --aurora-dark-4: #709353;
+    --aurora-dark-5: #87597f;
+    --aurora-dark-6: #4a7097;
+
+    --snake-width: 60vmin;
+}
+
+.light {
+    --green: var(--aurora-dark-4);
+    --orange: var(--aurora-dark-2);
+    --yellow: var(--aurora-dark-3);
+    --red: var(--aurora-dark-1);
+    --purple: var(--aurora-dark-5);
+    --blue: var(--aurora-dark-6);
+    --h1: var(--black-1);
+    --h2: var(--black-2);
+    --h3: var(--black-3);
+    --p: var(--black-2);
+    --bg: var(--white-3);
+    --bg-table: var(--white-1);
+    --search-bg: var(--white-2);
+    --bg-card: var(--white-1);
+    --a: var(--aurora-1);
+    --check: var(--black-4);
+    --check-button: var(--white-3);
+    --ed-table: var(--white-3);
+
+}
+.dark {
+    --green: var(--aurora-4);
+    --orange: var(--aurora-2);
+    --yellow: var(--aurora-3);
+    --red: var(--aurora-1);
+    --blue: var(--aurora-6);
+    --purple: var(--aurora-5);
+    --h1: var(--white-1);
+    --h2: var(--white-2);
+    --h3: var(--white-3);
+    --p: var(--white-2);
+    --bg: var(--black-3);
+    --bg-table: var(--black-4);
+    --search-bg: var(--white-2);
+    --bg-card: var(--black-2);
+    --a: var(--aurora-1);
+    --check: var(--white-3);
+    --check-button: var(--black-4);
+    --ed-table: var(--black-3);
+}
+
+$white: var(--white);
+$green: var(--green);
+$orange: var(--orange);
+$yellow: var(--yellow);
+$red: var(--red);
+$blue: var(--blue);
+$purple: var(--purple);
+$h1: var(--h1);
+$h2: var(--h2);
+$h3: var(--h3);
+$p: var(--p);
+$bg: var(--bg);
+$bg-table: var(--bg-table);
+$search-bg: var(--search-bg);
+$bg-card: var(--bg-card);
+$a: var(--a);
+$check: var(--check);
+$check-button: var(--check-button);
+$ed-table: var(--ed-table);
+$snake-width: var(--snake-width);
+
+
 $rapport: 1920/1440;
 $rapport-roses: 960/404;
 $rapport-texte: 440/106;

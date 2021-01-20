@@ -8,92 +8,6 @@
   src: url("../fonts/Rouge_Script/RougeScript-Regular.ttf");
 }
 
-:root {
-  --black-1: #2E3440;
-  --black-2: #3B4252;
-  --black-3: #434C5E;
-  --black-4: #4C566A;
-  --white-1: #D8DEE9;
-  --white-2: #E5E9F0;
-  --white-3: #ECEFF4;
-  --frost-1: #5E81AC;
-  --frost-2: #81A1C1;
-  --frost-3: #88C0D0;
-  --frost-4: #8FBCBB;
-  --aurora-1: #BF616A;
-  --aurora-2: #D08770;
-  --aurora-3: #EBCB8B;
-  --aurora-4: #A3BE8C;
-  --aurora-5: #B48EAD;
-  --aurora-6: #81A1C1;
-  --aurora-dark-1: #8f3a42;
-  --aurora-dark-2: #a85237;
-  --aurora-dark-3: #daa02b;
-  --aurora-dark-4: #709353;
-  --aurora-dark-5: #87597f;
-  --aurora-dark-6: #4a7097;
-  --image-acceuil: 20vmin;
-  --image-acceuil-small: 10vmin;
-  --snake-width: 60vmin;
-  --police-huge: 46px;
-  --police-big: 36px;
-  --police-medium: 26px;
-  --police-small: 18px;
-  --police-micro: 14px;
-}
-
-.light {
-  --green: var(--aurora-dark-4);
-  --orange: var(--aurora-dark-2);
-  --yellow: var(--aurora-dark-3);
-  --red: var(--aurora-dark-1);
-  --purple: var(--aurora-dark-5);
-  --blue: var(--aurora-dark-6);
-  --h1: var(--black-1);
-  --h2: var(--black-2);
-  --h3: var(--black-3);
-  --p: var(--black-2);
-  --bg: var(--white-3);
-  --bg-table: var(--white-1);
-  --search-bg: var(--white-2);
-  --bg-card: var(--white-1);
-  --a: var(--aurora-1);
-  --check: var(--black-4);
-  --check-button: var(--white-3);
-  --ed-table: var(--white-3);
-}
-
-.dark {
-  --green: var(--aurora-4);
-  --orange: var(--aurora-2);
-  --yellow: var(--aurora-3);
-  --red: var(--aurora-1);
-  --blue: var(--aurora-6);
-  --purple: var(--aurora-5);
-  --h1: var(--white-1);
-  --h2: var(--white-2);
-  --h3: var(--white-3);
-  --p: var(--white-2);
-  --bg: var(--black-3);
-  --bg-table: var(--black-4);
-  --search-bg: var(--white-2);
-  --bg-card: var(--black-2);
-  --a: var(--aurora-1);
-  --check: var(--white-3);
-  --check-button: var(--black-4);
-  --ed-table: var(--black-3);
-}
-
-@media (max-width: 767px) {
-  :root {
-    --police-huge: 26px;
-    --police-big: 22px;
-    --police-medium: 16px;
-    --police-small: 12px;
-    --police-micro: 8px;
-  }
-}
-
 #image-viewer, #section-2 #section-2-image-1, #section-3 .title div, #section-3 .carousel-1-cell, #section-4 .title-1, #section-4 .carousel-2-cell {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -170,6 +84,76 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+:root {
+  --black-1: #2E3440;
+  --black-2: #3B4252;
+  --black-3: #434C5E;
+  --black-4: #4C566A;
+  --white: #F4F4F4;
+  --white-1: #D8DEE9;
+  --white-2: #E5E9F0;
+  --white-3: #ECEFF4;
+  --frost-1: #5E81AC;
+  --frost-2: #81A1C1;
+  --frost-3: #88C0D0;
+  --frost-4: #8FBCBB;
+  --aurora-1: #BF616A;
+  --aurora-2: #D08770;
+  --aurora-3: #EBCB8B;
+  --aurora-4: #A3BE8C;
+  --aurora-5: #B48EAD;
+  --aurora-6: #81A1C1;
+  --aurora-dark-1: #8f3a42;
+  --aurora-dark-2: #a85237;
+  --aurora-dark-3: #daa02b;
+  --aurora-dark-4: #709353;
+  --aurora-dark-5: #87597f;
+  --aurora-dark-6: #4a7097;
+  --snake-width: 60vmin;
+}
+
+.light {
+  --green: var(--aurora-dark-4);
+  --orange: var(--aurora-dark-2);
+  --yellow: var(--aurora-dark-3);
+  --red: var(--aurora-dark-1);
+  --purple: var(--aurora-dark-5);
+  --blue: var(--aurora-dark-6);
+  --h1: var(--black-1);
+  --h2: var(--black-2);
+  --h3: var(--black-3);
+  --p: var(--black-2);
+  --bg: var(--white-3);
+  --bg-table: var(--white-1);
+  --search-bg: var(--white-2);
+  --bg-card: var(--white-1);
+  --a: var(--aurora-1);
+  --check: var(--black-4);
+  --check-button: var(--white-3);
+  --ed-table: var(--white-3);
+}
+
+.dark {
+  --green: var(--aurora-4);
+  --orange: var(--aurora-2);
+  --yellow: var(--aurora-3);
+  --red: var(--aurora-1);
+  --blue: var(--aurora-6);
+  --purple: var(--aurora-5);
+  --h1: var(--white-1);
+  --h2: var(--white-2);
+  --h3: var(--white-3);
+  --p: var(--white-2);
+  --bg: var(--black-3);
+  --bg-table: var(--black-4);
+  --search-bg: var(--white-2);
+  --bg-card: var(--black-2);
+  --a: var(--aurora-1);
+  --check: var(--white-3);
+  --check-button: var(--black-4);
+  --ed-table: var(--black-3);
 }
 
 :root {
